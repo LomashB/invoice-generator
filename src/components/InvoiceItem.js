@@ -50,7 +50,7 @@ class ItemRow extends React.Component {
             cellData={{
             type: "text",
             name: "name",
-            placeholder: "Item name",
+            placeholder: "Item Name",
             value: this.props.item.name,
             id: this.props.item.id,
           }}/>
@@ -59,7 +59,7 @@ class ItemRow extends React.Component {
             cellData={{
             type: "text",
             name: "description",
-            placeholder: "Item description",
+            placeholder: "Item Description",
             value: this.props.item.description,
             id: this.props.item.id
           }}/>
