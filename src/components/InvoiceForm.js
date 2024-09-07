@@ -105,7 +105,7 @@ class InvoiceForm extends React.Component {
     var items = this.state.items.slice();
     var newItems = items.map(function(items) {
       for (var key in items) {
-        if (key === item.name && items.id === item.id) {
+        if (key == item.name && items.id == item.id) {
           items[key] = item.value;
         }
       }
@@ -209,7 +209,7 @@ class InvoiceForm extends React.Component {
 
             <hr className="my-4"/>
             <Form.Label className="fw-bold">Notes:</Form.Label>
-            <Form.Control placeholder="Thank you for doing business with us!" name="notes" value={this.state.notes} onChange={(event) => this.editField(event)} as="textarea" className="my-2" rows={1}/>
+            <Form.Control placeholder="Thank you for doing business with us!" name="notes" value={this.state.notes} onChange={(event) => this.editField(event)} as="textarea" className="my-2" rows={2}/>
           </Card>
         </Col>
         <Col md={4} lg={3}>
