@@ -45,7 +45,7 @@ class InvoiceForm extends React.Component {
   }
   componentDidMount(prevProps) {
     this.handleCalculateTotal();
-  }
+  } 
   handleRowDel(index) {
     const updatedItems = [...this.state.items];
     updatedItems.splice(index, 1);
